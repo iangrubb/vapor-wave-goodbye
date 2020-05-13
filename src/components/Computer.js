@@ -95,7 +95,7 @@ const ScreenOverlay = styled.div`
 
   background: repeating-linear-gradient(
     rgba(44, 50, 53, 0.15),
-    rgba(44, 50, 53, 0.3) 1px,
+    rgba(44, 50, 53, 0.2) 1px,
     transparent 4px
   );
 

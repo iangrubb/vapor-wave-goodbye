@@ -13,7 +13,7 @@ export default function Bars(props) {
 
 const Container = styled.div`
     width: 7vw;
-    min-width: 60px;
+    min-width: 40px;
 
     display: flex;
     justify-content: space-between;
@@ -21,8 +21,8 @@ const Container = styled.div`
 `
 
 const Bar = styled.div`
-    background: rgba(119, 215, 253, 0.897);
+    background: rgba(119, 215, 253, 0.8);
     width: 38%;
-    height: calc(90px + 26vw);
+    height: calc(90px + 16vw);
     transform: rotateX(-40deg) translateY(-50%) skew(-10deg);
 `

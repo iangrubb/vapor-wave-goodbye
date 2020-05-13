@@ -21,9 +21,9 @@ const Container = styled.div`
     position: relative;
 
     width: 24vw;
-    min-width: 140px;
+    min-width: 100px;
     height: 24vw;
-    min-height: 140px;
+    min-height: 100px;
     
     & > img {
         position: absolute;
