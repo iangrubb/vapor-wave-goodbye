@@ -17,6 +17,7 @@ const Container = styled.div`
     img {
       width: 100%;
       height: auto;
+      filter: saturate(0.6) grayscale(20%) brightness(140%);
       
     }
 

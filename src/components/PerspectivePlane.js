@@ -15,12 +15,11 @@ export default function PerspectivePlane() {
         <Floor>
             <Sun lift="62%" top="0" left="10%"/>
 
-            <PopBuilding lift="100%" top="28%" right="18%" />
+            <PopBuilding lift="130%" top="38%" right="14%" />
 
-            
             <PopDolphin lift="50%" top="42%" left="56%" size="19vw"/>
             <PopDolphin lift="50%" top="48%" left="63%" size="21vw"/>
-            <PopDolphin lift="50%" top="28%" left="65%" size="10vw"/>
+            <PopDolphin lift="50%" top="38%" left="60%" size="10vw"/>
             <PopDolphin lift="50%" top="28%" left="35%" size="12vw"/>
             <PopDolphin lift="50%" top="28%" left="20%" size="10vw"/>
             <PopDolphin lift="50%" top="28%" left="20%" size="10vw"/>
@@ -28,7 +27,6 @@ export default function PerspectivePlane() {
             <PopDolphin lift="50%" top="46%" left="12%" size="10vw"/>
             <PopDolphin lift="50%" top="44%" left="28%" size="12vw"/>
             
-
             <PopPalm lift="100%" top="43%" left="3%" size="14%"/>
             <PopPalm lift="100%" top="30%" left="6%" size="12%"/>
             <PopPalm lift="100%" top="20%" left="13%" size="10%"/>
@@ -39,13 +37,13 @@ export default function PerspectivePlane() {
             <PopPalm lift="100%" top="12%" left="36%" size="8%" />
             <PopPalm lift="100%" top="10%" left="42%" size="7%" disapear/>
 
-            <PopBars lift="50%" top="45%" left="52%"/>
+            <PopBars lift="50%" top="43%" left="35%"/>
 
-            <PopStatue lift="100%" top="10%" right="36%"/>
+            <PopStatue lift="100%" top="14%" right="43%"/>
 
-            <PopMatt lift="100%" top="70%" left="12%"/>
+            <PopMatt lift="100%" top="72%" left="12%"/>
 
-            <PopGifMonitor lift="140%" top="72%" left="11%"/>
+            {/* <PopGifMonitor lift="140%" top="72%" left="11%"/> */}
 
         </Floor>
     )
@@ -149,7 +147,7 @@ const PopBars = styled(Bars)`
 
 const PopStatue = styled(Statue)`
     ${popUp}
-    width: 16vw;
+    width: 10vw;
     min-width: 80px;
 `
 

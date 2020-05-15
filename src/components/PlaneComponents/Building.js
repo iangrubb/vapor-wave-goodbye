@@ -8,10 +8,9 @@ export default function Building(props) {
     return (
         <Container className={props.className}>
             <img src="/images/11broadway.png" alt="11 broadway" />
-            <PositionedPalm size="24%" bottom="6%" left="48%"/>
-            <PositionedPalm size="18%" bottom="8%" left="26%"/>
-            <PositionedPalm size="22%" bottom="4%" left="8%"/>
-            <PositionedPalm size="28%" bottom="4%" left="82%"/>
+            <PositionedPalm size="32%" bottom="-24%" left="42%"/>
+            <PositionedPalm size="22%" bottom="-25%" left="23%"/>
+            <PositionedPalm size="26%" bottom="-24%" left="2%"/>
         </Container>
     )
 }
@@ -20,7 +19,7 @@ const Container = styled.div`
 
     position: relative;
 
-    width: 24vw;
+    width: 32vw;
     min-width: 100px;
     height: 24vw;
     min-height: 100px;
