@@ -27,7 +27,7 @@ const Container = styled.div`
     img {
       width: 100%;
       height: auto;
-      animation: ${dive} linear 2.74s infinite;
+      animation: ${dive} linear 2.735s infinite;
     }
     
 `

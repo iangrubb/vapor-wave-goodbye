@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styled, {keyframes} from 'styled-components'
+import styled from 'styled-components'
 
 export default function Palm(props) {
     return (
@@ -17,12 +17,12 @@ const Container = styled.div`
     img {
       width: 100%;
       height: auto;
-      filter: saturate(0.6) grayscale(20%) brightness(140%);
+      filter: saturate(0.3) brightness(200%) hue-rotate(-40deg);
       
     }
 
     @media (max-width: 425px) {
-        ${ props => props.disapear ? 'display: none' : null}
+        ${ props => props.disappear ? 'display: none' : null}
     }
 
     

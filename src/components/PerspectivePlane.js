@@ -8,16 +8,14 @@ import Palm from './PlaneComponents/Palm'
 import Bars from './PlaneComponents/Bars'
 import Statue from './PlaneComponents/Statue'
 import Matt from './PlaneComponents/Matt'
-import GifMonitor from './PlaneComponents/GifMonitor'
 
 export default function PerspectivePlane() {
     return (
         <Floor>
             <Sun lift="62%" top="0" left="10%"/>
 
-            <PopBuilding lift="130%" top="38%" right="14%" />
+            <PopBuilding lift="130%" top="34%" right="16%" />
 
-            <PopDolphin lift="50%" top="42%" left="56%" size="19vw"/>
             <PopDolphin lift="50%" top="48%" left="63%" size="21vw"/>
             <PopDolphin lift="50%" top="38%" left="60%" size="10vw"/>
             <PopDolphin lift="50%" top="28%" left="35%" size="12vw"/>
@@ -25,23 +23,23 @@ export default function PerspectivePlane() {
             <PopDolphin lift="50%" top="28%" left="20%" size="10vw"/>
             <PopDolphin lift="50%" top="58%" left="30%" size="18vw"/>
             <PopDolphin lift="50%" top="46%" left="12%" size="10vw"/>
-            <PopDolphin lift="50%" top="44%" left="28%" size="12vw"/>
             
             <PopPalm lift="100%" top="43%" left="3%" size="14%"/>
             <PopPalm lift="100%" top="30%" left="6%" size="12%"/>
             <PopPalm lift="100%" top="20%" left="13%" size="10%"/>
 
-            <PopPalm lift="100%" top="10%" left="6%" size="8%"/>
-            <PopPalm lift="100%" top="12%" left="16%" size="6%" disapear/>
+            <PopPalm lift="100%" top="14%" left="6%" size="8%"/>
+            <PopPalm lift="100%" top="12%" left="16%" size="6%" disappear/>
             <PopPalm lift="100%" top="16%" left="22%" size="10%" />
             <PopPalm lift="100%" top="12%" left="36%" size="8%" />
-            <PopPalm lift="100%" top="10%" left="42%" size="7%" disapear/>
+            <PopPalm lift="100%" top="16%" left="42%" size="7%" disappear/>
+            <PopPalm lift="100%" top="70%" left="6%" size="14%" disappear/>
 
             <PopBars lift="50%" top="43%" left="35%"/>
 
-            <PopStatue lift="100%" top="14%" right="43%"/>
+            <PopStatue lift="100%" top="14%" right="48%"/>
 
-            <PopMatt lift="100%" top="72%" left="12%"/>
+            <PopMatt lift="100%" top="64%" left="12%"/>
 
             {/* <PopGifMonitor lift="140%" top="72%" left="11%"/> */}
 
@@ -66,7 +64,7 @@ const Floor = styled.div`
     background-size: 80px 80px;
     background-position: 0 0, 0 40px, 40px -40px, -40px 0px;
 
-    transform: perspective(calc(50px + 10vw)) rotateX(40deg);
+    transform: perspective(calc((300px + 10vw) / 2)) rotateX(40deg);
     transform-style: preserve-3d;
 
 `
@@ -153,13 +151,6 @@ const PopStatue = styled(Statue)`
 
 const PopMatt = styled(Matt)`
     ${popUp}
-    width: 13vw;
-    min-width: 90px;
-`
-
-const PopGifMonitor = styled(GifMonitor)`
-    ${popUp}
-    width: 11vw;
-    min-width: 60px;
-
+    width: 10vw;
+    min-width: 70px;
 `

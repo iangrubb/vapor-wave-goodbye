@@ -94,8 +94,8 @@ const ScreenOverlay = styled.div`
   box-shadow: inset 0 0 24px 8px rgba(3, 2, 19, 0.7);
 
   background: repeating-linear-gradient(
-    rgba(44, 50, 53, 0.15),
-    rgba(44, 50, 53, 0.2) 1px,
+    rgba(44, 50, 20, 0.05),
+    rgba(44, 50, 20, 0.1) 1px,
     transparent 4px
   );
 

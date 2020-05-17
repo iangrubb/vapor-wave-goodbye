@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import styled from 'styled-components'
 
@@ -7,8 +7,19 @@ import NavBar from './components/NavBar'
 import PerspectivePlane from './components/PerspectivePlane'
 
 function App() {
+
+  useEffect(() => {
+
+    const audioElement = document.getElementById("song")
+    audioElement.play()
+
+  })
+
   return (
     <Container>
+      <audio id="song">
+          <source src="song.mp3"></source>
+      </audio>
       <Computer>
         <NavBar />
         <GoodByeMarquee>さようなら</GoodByeMarquee>
