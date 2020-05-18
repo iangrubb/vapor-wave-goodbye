@@ -4,6 +4,8 @@ import styled, {keyframes} from 'styled-components'
 
 import AppleLogo from './AppleLogo'
 
+import AudioPlayer from './AudioPlayer'
+
 export default function Computer(props) {
     return (
         <ComputerFrame>
@@ -14,6 +16,7 @@ export default function Computer(props) {
             {props.children}
           </ScreenBackground>
           <PositionedAppleLogo />
+          <AudioPlayer/>
           <Light />
         </ComputerFrame>
     )
@@ -46,6 +49,7 @@ const ScreenBackground = styled.div`
 
   width: calc(100% - 40px);
   height: calc(100% - 120px);
+
 
   margin: 20px 0 0 0;
 
@@ -100,6 +104,8 @@ const scanlines = keyframes`
 
 const Scanlines = styled.div`
 
+  pointer-events: none;
+
   width: 100%;
   height: 200%;
 
@@ -142,7 +148,7 @@ const Light = styled.div`
 
   position: absolute;
   bottom: 50px;
-  right: 80px;
+  right: 60px;
   width: 16px;
   height: 6px;
   border-radius: 2px;
