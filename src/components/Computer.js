@@ -8,7 +8,9 @@ export default function Computer(props) {
     return (
         <ComputerFrame>
           <ScreenBackground>
-            <ScreenOverlay />
+            <ScreenOverlay>
+              <Scanlines/>
+            </ScreenOverlay>
             {props.children}
           </ScreenBackground>
           <PositionedAppleLogo />
@@ -64,17 +66,6 @@ const ScreenBackground = styled.div`
 
 `
 
-const scanlines = keyframes`
-
-  0% {
-    background-position: 50% 0%;
-  }
-  100% {
-    background-position: 50% 100%;
-  }
-
-`
-
 const ScreenOverlay = styled.div`
   position: absolute;
 
@@ -86,12 +77,33 @@ const ScreenOverlay = styled.div`
 
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-
-  animation: ${scanlines} 80s linear infinite;
+  height: 100%;
 
   box-shadow: inset 0 0 24px 8px rgba(3, 2, 19, 0.7);
+
+
+`
+
+const scanlines = keyframes`
+
+  0% {
+    /* background-position: 50% 0%; */
+    transform: translateY(-50%);
+  }
+  100% {
+    /* background-position: 50% 100%; */
+    transform: translateY(0%);
+  }
+
+`
+
+const Scanlines = styled.div`
+
+  width: 100%;
+  height: 200%;
+
+  animation: ${scanlines} 80s linear infinite;
 
   background: repeating-linear-gradient(
     rgba(44, 50, 20, 0.05),
@@ -99,8 +111,11 @@ const ScreenOverlay = styled.div`
     transparent 4px
   );
 
-  background-size: 200% 200%;
+
 `
+
+
+
 
 const PositionedAppleLogo = styled(AppleLogo)`
   position: absolute;

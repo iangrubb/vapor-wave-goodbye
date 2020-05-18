@@ -33,15 +33,13 @@ export default function PerspectivePlane() {
             <PopPalm lift="100%" top="16%" left="22%" size="10%" />
             <PopPalm lift="100%" top="12%" left="36%" size="8%" />
             <PopPalm lift="100%" top="16%" left="42%" size="7%" disappear/>
-            <PopPalm lift="100%" top="70%" left="6%" size="14%" disappear/>
+            <PopPalm lift="100%" top="70%" left="6%" size="12%" disappear/>
 
             <PopBars lift="50%" top="43%" left="35%"/>
 
             <PopStatue lift="100%" top="14%" right="48%"/>
 
-            <PopMatt lift="100%" top="64%" left="12%"/>
-
-            {/* <PopGifMonitor lift="140%" top="72%" left="11%"/> */}
+            <PopMatt lift="100%" top="64%" left="8%"/>
 
         </Floor>
     )
@@ -151,6 +149,6 @@ const PopStatue = styled(Statue)`
 
 const PopMatt = styled(Matt)`
     ${popUp}
-    width: 10vw;
-    min-width: 70px;
+    width: 14vw;
+    min-width: 80px;
 `

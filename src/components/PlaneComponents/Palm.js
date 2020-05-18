@@ -10,6 +10,7 @@ export default function Palm(props) {
     )
 }
 
+
 const Container = styled.div`
     
     width: ${props => props.size ? props.size : "100px"};
@@ -17,7 +18,7 @@ const Container = styled.div`
     img {
       width: 100%;
       height: auto;
-      filter: saturate(0.3) brightness(200%) hue-rotate(-40deg);
+      filter: saturate(0.35) brightness(230%) hue-rotate(-50deg);
       
     }
 

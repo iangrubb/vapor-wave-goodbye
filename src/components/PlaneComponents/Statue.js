@@ -17,7 +17,7 @@ const Container = styled.div`
     img {
       width: 100%;
       height: auto;
-      filter: saturate(0.6) brightness(120%);
+      filter: saturate(0.4) brightness(150%) hue-rotate(-40deg);
     }
-
+    
 `
